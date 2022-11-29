@@ -8,6 +8,8 @@ environment:
 dependencies: 
   cupertino_icons: ^1.0.2
   get: 4.6.5
+  font_awesome_flutter: ^10.2.1
+  ionicons: 0.2.1
   flutter: 
     sdk: flutter
 
@@ -17,7 +19,8 @@ dev_dependencies:
     sdk: flutter
 
 flutter: 
-  assets:
+  assets: 
     - assets/images/
     - assets/icons/
   uses-material-design: true
+

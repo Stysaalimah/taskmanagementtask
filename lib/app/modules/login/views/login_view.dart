@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:get/get.dart';
 import 'package:taskmanagementtask/app/routes/app_pages.dart';
@@ -64,6 +65,7 @@ class LoginView extends GetView<LoginController> {
                   ),
                 )
               : const SizedBox(),
+
           Expanded(
             child: Container(
               decoration: const BoxDecoration(
@@ -104,10 +106,17 @@ class LoginView extends GetView<LoginController> {
                                 ),
                               ])
                         : SizedBox(),
-                    Image.asset('assets/images/login.png'),
+                    Image.asset(
+                      'assets/images/login.png',
+                      height: Get.height * 0.5,
+                    ),
                     FloatingActionButton.extended(
                       onPressed: () => Get.toNamed(Routes.HOME),
                       label: const Text('Sign In With Google'),
+                      icon: const Icon(
+                        FontAwesomeIcons.google,
+                        color: Colors.white,
+                      ),
                     ),
                   ]),
             ),
